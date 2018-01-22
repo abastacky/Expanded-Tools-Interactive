@@ -1,0 +1,23 @@
+    body{
+    	background-color: lavender;
+    	font-family: 'Supermercado One', cursive;
+    	margin:100px;
+    	border-color: black ;
+    	border-width: 1px;
+    	border-style:solid;
+    	padding:40px;
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 40px;
+      color: purple;
+    }
+
+    h2{
+
+    }
+
+    a{
+
+    }
