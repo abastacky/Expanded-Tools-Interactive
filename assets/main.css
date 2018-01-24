@@ -1,23 +1,36 @@
     body{
-    	background-color: lavender;
-    	font-family: 'Supermercado One', cursive;
-    	margin:100px;
-    	border-color: black ;
-    	border-width: 1px;
-    	border-style:solid;
-    	padding:40px;
+
+    	background-color: rgb(255, 237, 250);
+    	font-family: 'Shrikhand', cursive;
+    	margin:200px;
+    	//border-color: black ;
+    	//border-width: 1px;
+    	//border-style:solid;
+    	//padding:40px;
     }
 
     h1 {
       font-weight: normal;
-      font-size: 40px;
-      color: purple;
+      font-size: 200px;
+      color: black;
     }
 
     h2{
 
+
+    }
+
+    h3{
+    	webkit-transform: rotate (-90deg);
+    	//writing-mode: vertical-lr;
+  		//text-orientation: sideways-lr;
+  		transform:rotate(-90deg);
+
     }
 
     a{
-
+    	font-weight:normal;
+    	font-size: 55px;
+    	color:black;
+    	font-family:'Bungee Hairline', cursive ;
     }
