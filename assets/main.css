@@ -2,25 +2,38 @@
 
     	background-color: rgb(255, 237, 250);
     	font-family: 'Shrikhand', cursive;
-    	margin:200px;
+    	text-align: center;
+    	/*margin:200px;*/
     	//border-color: black ;
     	//border-width: 1px;
     	//border-style:solid;
-    	//padding:40px;
+    	/*padding:40px;*/
     }
 
     h1 {
-      font-weight: normal;
-      font-size: 200px;
-      color: black;
+    	text-align: center;
+      	font-weight: normal;
+      	font-size: 200px;
+      	color: black;
     }
 
     h2{
+    font-weight: normal;
+    font-size: 100px;
+    color: yellow;
 
 
     }
 
     h3{
+    font-weight: normal;
+    font-size: 100px;
+    color: black;
+    }
+    	
+
+
+    h4{
     	webkit-transform: rotate (-90deg);
     	//writing-mode: vertical-lr;
   		//text-orientation: sideways-lr;
@@ -29,6 +42,7 @@
     }
 
     a{
+    	text-align: center;
     	font-weight:normal;
     	font-size: 55px;
     	color:black;
