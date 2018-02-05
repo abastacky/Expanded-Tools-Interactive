@@ -1,0 +1,44 @@
+    body{
+	background-color:white;
+	margin:0px;
+	padding-left: 0px;
+	border:0px;
+}
+
+#vertlines div{
+    height: 100vh;
+    width: 1px;
+    background-color: rgb(49, 62, 104);
+    margin: 3px;
+    float: left;
+}
+
+#circles div{
+	height:4vw;
+	width:4vw;
+	background-color: yellow;
+	margin:3vw;
+	border-radius:50%;
+	float:right;
+}
+
+#circles .red{
+	background-color:red;
+}
+
+#circles .pink{
+	background-color:rgb(252, 237, 251);
+	height: 5vw;
+	width:5vw;
+	margin:2vw;
+}
+
+#circles {
+	width: 100vw;
+    height: 100vh;
+	clear: both;
+	position:fixed;
+    /*taking it out of the flow, putting it on top*/
+  
+}
+	
