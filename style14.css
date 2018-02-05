@@ -1,0 +1,74 @@
+    body{
+	background-color:white;
+	margin:0px;
+	padding-left: 0px;
+	border:0px;
+}
+
+#squares div{
+    height: 60px;
+    width: 100px;
+    background-color: black;
+    margin: 2px;
+    float: left;
+}
+
+#squares {
+	width: 100vw;
+    height: 100vh;
+	clear: both;
+	position:fixed;
+    /*taking it out of the flow, putting it on top*/
+}
+
+#surface div{
+	width: 8vw;
+    height: 8vw;
+    margin:4vw;
+    border-radius:50%;
+	background-color:blue;
+	border-color:red;
+	border-width:10px;
+	border-style:solid;
+	float:left;
+}
+
+#surface {
+	width: 100vw;
+    height: 100vh;
+    clear:both;
+    /*taking it out of the flow, putting it on top*/
+    position:fixed;
+}
+
+#circles div{
+	height:10vw;
+	width:10vw;
+	margin:4vw;
+	background-color:red;
+	border-radius:50%;
+	float:right;
+}
+
+#circles {
+	height:100vw;
+	width:100vw;
+	clear:both;
+	position:fixed;
+}
+
+#confetti div{
+	height:20vw;
+	width:8vw;
+	margin:4vw;
+	background-color:yellow;
+	float:right;
+}
+
+#confetti {
+	height:100vw;
+	width:100vw;
+	clear:both;
+	position:fixed;
+}
+
