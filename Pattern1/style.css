@@ -1,0 +1,41 @@
+body{
+	background-color:white;
+}
+
+#squares div{
+    height: 11vw;
+    width: 11vw;
+    background-color: tomato;
+    margin: .2vw;
+    float: right;
+    opacity:.75;
+
+}
+
+#squares .blue{
+	background-color:blue;
+}
+
+#squares #yellow{
+	background-color:yellow;
+}
+
+#circles div{
+	height:22vw;
+	width:22vw;
+	background-color: blue;
+	margin:-2vw;
+	float:left;
+	border-radius:50%;
+	opacity:.5;
+}
+
+#circles {
+	width: 100vw;
+    height: 100vh;
+    /* border: 4px solid blue; */
+    
+    clear: both;
+    /*taking it out of the flow, putting it on top*/
+    position: fixed;
+}

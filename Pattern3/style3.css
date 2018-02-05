@@ -1,0 +1,23 @@
+body{
+	background-color:tomato;
+}
+
+#circles div{
+    height: 3vw;
+    width: 3vw;
+    background-color: white;
+    margin: 1vw;
+    border-radius:50%;
+    float: right;
+}
+
+#circles .blue{
+	height:10vw;
+	width:10vw;
+	background-color:tomato;
+    border-color:blue;
+    border-style: solid;
+    border-width: 3px;
+    float:center;
+}    
+
