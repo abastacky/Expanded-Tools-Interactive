@@ -58,14 +58,18 @@ body{
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
-     background-color: white;
+     background-color: cyan;
+     opacity:0.75;
+     mix-blend-mode: color-dodge;
   margin: 5vw;
    display: block; 
     float: left;
+    box-shadow:10px 10px 16px #000000;
 }
 
 #circle_4 div:hover {
     background-color: blue;
+    opacity:1;
     height:15vw;
 }
 
