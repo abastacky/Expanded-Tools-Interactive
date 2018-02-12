@@ -61,6 +61,12 @@
     	font-family:'Bungee Hairline', cursive ;
     }
 
+    .thumbnail {
+        width:500px;
+        height:auto;
+
+    }
+
 a:hover {
     color: blue;
 }

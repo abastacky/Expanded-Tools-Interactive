@@ -1,0 +1,33 @@
+    body{
+	background-color:rgb(232, 231, 225);
+	margin:0px;
+	padding-left: 0px;
+	border:0px;
+}
+
+#vertlines div{
+    height: 30vh;
+    width: 1vw;
+    background-color: white;
+    margin: 1px;
+    float: left;
+}
+
+#horizlines div{
+	height:6vw;
+	width:82vw;
+	background-color: rgb(252, 235, 133);
+	margin:8vw;
+	float:center;
+}
+
+#horizlines {
+	width: 100vw;
+    height: 100vh;
+    margin-left:auto;
+    margin-right:auto;
+	clear: both;
+    /*taking it out of the flow, putting it on top*/
+    position: fixed;
+}
+	

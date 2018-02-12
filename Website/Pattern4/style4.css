@@ -1,0 +1,23 @@
+body{
+	background-color:rgb(232, 231, 225);
+	margin:0px;
+	padding-left: 0px;
+	border:0px;
+}
+
+#vertlines div{
+    height: 100vw;
+    width: 1vw;
+    background-color: tomato;
+    margin: 2vw;
+    float: left;
+}
+
+#horizlines div{
+	height:1vw;
+	width:100vw;
+	background-color: rgb(179, 194, 219);
+	margin:8vw;
+	position:top;
+	
+}
