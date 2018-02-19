@@ -1,0 +1,77 @@
+    body{
+	background-color:red;
+}
+
+#squares div{
+    height: 60px;
+    width: 120px;
+    background-color: rgb(209, 77, 6);
+    margin: 2px;
+    float: left;
+    transform: rotate(15deg);
+}
+
+#squares {
+	width: 100vw;
+    height: 100vh;
+	clear: both;
+	position:fixed;
+    /*taking it out of the flow, putting it on top*/
+}
+
+#surface div{
+	width: 100px;
+    height: 100px;
+    margin:30px;
+    border-radius:50%;
+	background-color:rgba(201, 201, 255, 0.25);
+	border-color:red;
+	border-width:10px;
+	border-style:solid;
+	float:left;
+}
+
+#surface {
+	width: 100vw;
+    height: 100vh;
+    clear:both;
+    /*taking it out of the flow, putting it on top*/
+    position:absolute;
+}
+
+#surface div:hover {
+    background-color: blue;
+}
+
+#circles div{
+	height:10vw;
+	width:10vw;
+	margin:4vw;
+	background-color:red;
+	border-radius:50%;
+	float:left;
+}
+
+#circles {
+	height:100vw;
+	width:100vw;
+	clear:both;
+	position:fixed;
+}
+
+#confetti div{
+	height:100px;
+	width:100px;
+	margin:15px;
+	background-color:yellow;
+	opacity: 0.5;
+	float:left;
+	mix-blend-mode: overlay;
+}
+
+#confetti {
+	height:100vw;
+	width:100vw;
+	clear:both;
+	position:fixed;
+}

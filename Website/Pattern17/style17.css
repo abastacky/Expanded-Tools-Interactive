@@ -1,0 +1,106 @@
+    body{
+	background-color:white;
+	margin:0px;
+	padding-left: 0px;
+	border:0px;
+}
+
+#vertlines div{
+    height: 400vh;
+    width: 1px;
+    background-color: rgb(49, 62, 104);
+    margin: 3px;
+    float: left;
+}
+
+#horizlines {
+    height: 100vh;
+    width: 200vw;
+    position: absolute;
+    clear: both;    
+}
+
+#horizlines div {
+    height: 4vh;
+    width: 200vw;
+    display: block;
+    border-bottom: solid red;
+    border-bottom-width: thick;
+    float: left;
+    margin-top: 2vh;
+    margin-bottom: 20vw;
+    margin-left: -100vw;
+    transform: rotate(-20deg);
+     opacity: .75;
+    
+}
+
+
+#circles div{
+	height:3vw;
+	width:3vw;
+	background-color: white;
+	margin:4vw;
+	border-radius:50%;
+	float:right;
+
+}
+
+#circles .red{
+	background-color:red;
+}
+
+#circles div:hover{
+	background-color:black;
+	width:10vw;
+	height:2vw;
+	opacity: 0.75;
+}
+
+#circles {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    clear: both;    
+}
+
+#rect_1 {
+	height:100vh;
+	width:100vw;
+	position:fixed;
+	clear:both;
+}
+
+#rect_1 div{
+	height: 250px;
+	width:200px;
+	margin:80px;
+	background-color:blue;
+	float:left;
+
+}	
+
+#rect_2 {
+	height:100vh;
+	width:100vw;
+	position:fixed;
+	clear:both;
+
+}
+
+#rect_2 div{
+	height: 250px;
+	width:200px;
+	float:left;
+	background-color:white;
+	margin-left:100px;
+	margin-right:80px;
+	margin-top:100px;
+
+}
+
+#rect_2 div:hover {
+    background-color: red;
+}
+	
+	
