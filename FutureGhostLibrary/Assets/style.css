@@ -1,0 +1,55 @@
+body{
+
+    	background-color: white;
+
+    }
+
+.container {
+	width:100vw;
+	height:100vh;
+	text-align:center;
+	background-color:red;
+}
+
+#FGL {
+	position:center;
+	width:80vw
+	height:80vh;
+	margin-top:10vh;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+  -webkit-animation: rotating 25s linear infinite;
+  -moz-animation: rotating 25s linear infinite;
+  -ms-animation: rotating 25s linear infinite;
+  -o-animation: rotating 25s linear infinite;
+  animation: rotating 25s linear infinite;
+}
+
+
+#logo{
+/*float:left;*/
+padding-top:30px;
+padding-left:30px;
+left: 0;
+top: 0;
+clear: both;
+position: fixed;
+width:200px;
+
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
