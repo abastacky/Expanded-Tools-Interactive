@@ -4,31 +4,40 @@
         font-size:100px;
         font-family: 'Space Mono', cursive;
         color:white;
+        height:1000vh;
 
     }
 
-    @media screen and (max-width: 1000px) {
-    body {
-        /*background-color: rgb(250, 255, 114);*/
-        background-color: rgb(206, 77, 22);
-    }
 
 
-    @media all and (max-width: 1000px) {
-    body {
-        font-size: 70px;
-        color:rgb(245, 224, 255);
-        } 
-    }
+.scrollingisdrawing{
+    font-family: 'Source Code Pro', cursive;
+    font-weight: bold;
+    letter-spacing: -1px;
+    width:100vw;
+    height:10vh;
+    font-size: 50px;
+    /*color:red;*/
+    text-align: center;
+    position:fixed;
+    padding-top: 15vh;
 }
 
 .getto1000000{
-    position: -webkit-sticky;
-    position: sticky;
+
     font-family: 'Space Mono', cursive;
     font-weight: bolder;
     text-align: center;
+    height:350px;
+    padding-top:160px;
+    padding-bottom:20px;
+    line-height: 130%;
 
+}
+
+.getto1000{
+    position:fixed;
+    transition: all 600ms ease;
 }
 
 h1 {
@@ -37,15 +46,19 @@ h1 {
     color: white;
     margin-top:40px;
     margin-bottom:10px;
+    position:fixed;
 }
 
+p {
+   margin: -28px auto auto 0px;
+}
 
 
 .buttoncontainer{
     width:850px;
-    height:300px;
+/*    height:800px;*/
     margin:auto;
-    /*background-color:red;*/
+/*    background-color:red;*/
 
 
 }
@@ -55,15 +68,32 @@ h1 {
     border-style: solid;
     border-width: 8px;
     height:100px;
-    width:300px;
-    position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    width:250px;
+   /* position: relative;*/
+/*    top:50%;*/
+/*    left:50%;*/
+/*    transform: translate(-50%, -50%);*/
     border-radius:80px;
     transition: all 600ms ease;
     text-align: center;
+/*    position:relative;*/
+    line-height:100%;
+    /*margin:auto;*/
+    margin-left: 39vw;
+    padding-top: 55px;
+    /*how to get the button to transition, not jump*/
+    transition: all 600ms ease;
+    position:fixed;
+   /* transform: translate (-50%, 0%);*/
  
+}
+
+#yesbutton:hover{
+    background-color:red;
+}
+
+#yesbutton:visited {
+    color: red;
 }
 
 /*trying to get yes to transition to no*/
@@ -87,11 +117,86 @@ h1 {
 
 #drawing{
 background-color:white;
-padding:200px;
-margin:50px;
-height: 500vh;
+margin:10vw;
+height: 100vh;
+width:80vw;
 display:none;
+position: fixed;
+top:40vh;
+overflow:scroll;
 }
 
+#drawing #progressmeter{
+    color:red;
+    position:fixed;
+    display:none;
+    width: 50px;
+}
+
+/*#markscontainer{
+    border-style:solid;
+    border-width:5px;
+    border-color:red;
+    height:1000vh;
+}*/
+
+#markscontainer div{
+    /*position:sticky;*/
+    float: left;
+    height:10px;
+    width: 5px;
+    border-radius: 20%;
+    background-color:red;
+    margin: 1px;
+}
+
+#scoreboard{
+    height: 200px;
+    width:200px;
+/*    border-style:solid;
+    border-color: white;*/
+    background-color:white;
+    border-radius:30%;
+    position:fixed;
+
+}
+
+.counter{
+    font-size: 80px;
+    position:fixed;
+    float:left;
+    /*background-color:white;*/
+    color:red;
+    padding-left:20px;
+    /*text-align:center;*/
+
+}
+
+.scrolltext{
+    /*padding-top:100px;*/
+    font-size:60px;
+    font-weight: bold;
+    display:none;
+
+}
+
+
+
+
+
+
+    @media screen and (max-width: 1000px) {
+    body {
+        /*background-color: rgb(250, 255, 114);*/
+        background-color: rgb(206, 77, 22);
+        font-size: 70px;
+        color:rgb(245, 224, 255);
+    }
+
+    h1{
+        font-size: 70px;
+
+    }
+}
 
 
