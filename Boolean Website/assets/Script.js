@@ -14,6 +14,11 @@ $(document).ready(function(){
 	// 	console.log(n);
 
 	// });
+	$(window).scroll(function(){
+		$(".scrollingisdrawing").slideUp();
+		// $(".scrollingisdrawing").html("scrolling is work");
+		});
+
 
 	var d=true;
 	$("#yesbutton").click(function(){
@@ -30,6 +35,7 @@ $(document).ready(function(){
 		var scrollPos;
 
 
+
 		$(window).scroll(function(){
 
 		scrollPos = $('body').scrollTop();
@@ -38,8 +44,46 @@ $(document).ready(function(){
 		var n = $('#markscontainer>div').length;
 		// $('.counter').show();
 		$('.counter').text(n);
+console.log("scrollPos");
+		//trying to get notification to show up when user needs to switch scroll direction
+		if ($('body').scrollTop()>800){
+        $('#switch').fadeIn();
+     	}
+    		else{
+      			$('#switch').fadeIn();
+     	}
 
-		console.log(n);
+
+		var goodjob=Number.isInteger(n / 1000);
+  		if (goodjob){
+  		console.log("goodjob");
+  		$("body").css("background-color", "rgb(255, 204, 0)");
+
+  	}
+
+  		var greatjob=Number.isInteger(n/2000);
+  		if(greatjob){
+  			console.log("greatjob");
+  		$("body").css("background-color", "rgb(255, 113, 53)");	
+  		}
+
+  		var superb=Number.isInteger(n/3000);
+  		if(superb){
+  			console.log("superb");
+  		$("body").css("background-color", "rgb(122, 50, 73)");
+  		}
+
+  		var topnotch=Number.isInteger(n/4000);
+  		if(topnotch){
+  			console.log("topnotch");
+  		$("body").css("background-color", "rgb(68, 255, 137)");
+  		}
+
+  	//maybe add this in later
+  	// 	$("body").addClass("flicker");
+  	// } else {
+  	// 	$("body").removeClass("flicker");
+  	// }
 
 		});
 
@@ -72,12 +116,21 @@ $(document).ready(function(){
             d=true;
             //how do I bring the counter back to zero?
             n=0;
+            // $('#markscontainer>div').html("");
         }
     });
 
     $("#yesbutton").click(function(){
         $("#drawing").slideToggle("slow");
+        $('#markscontainer').html("");
+        // $('.counter').html("<div></div><div class=\"scrolltext\">scroll!<\/div>");
+        $('.counter').html("scroll!");
+
     });
+
+    // if (n/1000 ==)
+
+
 
 
 	

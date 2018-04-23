@@ -180,6 +180,25 @@ overflow:scroll;
 
 }
 
+@keyframe flicker{
+    to{background-color:yellow;
+    }
+    from{background-color:blue;
+    } 
+
+}
+
+.flicker{
+    animation-name:flicker;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+}
+
+#switch{
+
+    display:none;
+    font-color:yellow;
+}
 
 
 
