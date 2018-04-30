@@ -1,16 +1,17 @@
 body{
 	background-color: white;
-	height:1000vh;
+	height:2000vh;
 	width:100vw;
 	cursor:default;
+	overflow-x:hidden;
 }
 
 #abstract {
-position:relative;	
+position:absolute;	
 height:80vh;
 width:90vw;
 /*background-color:red;*/
-padding-top: 4vh;
+padding-top: 125vh;
 padding-left: 2vw;
 padding-right: 2vw;
 font-family: 'Kavivanar', cursive;
@@ -27,15 +28,18 @@ div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-left:1vw;
-  margin-top:-30vh;
+/*  padding-left:1vw;*/
+  margin-top:-105vh;
+  width:100vw;
   background-color: rgb(244, 255, 100);
   font-family: 'Kavivanar', cursive;
   font-size:100px;
+  text-align:center;
   clear:both;
   transition: all 600ms ease;
   scroll-behavior: smooth;
   cursor:pointer;
+/*  z-index:3;*/
   
 }
 
@@ -44,23 +48,24 @@ div.sticky {
 	width:26vw;
 	position:fixed;
 	display:block;
+	visibility:visible;
 }
 
 #r {
- 	margin-top:-60vh;
+ 	margin-top:125vh;
  	margin-left:-2vw;
  	transform: rotate(-20deg);
 /* 	display:none;*/
 }
 
 #e {
-	margin-top: -78vh;
+	margin-top: 113vh;
 	margin-left: 70vw;
 	width: 23vw;
 	transform: rotate(12deg);
 }
 
-#r:hover {
+#a:hover {
 	transform: rotate(0deg);
 	transition:all 600ms ease;
 
@@ -71,9 +76,10 @@ div.sticky {
   	position: sticky;
   	top: 0;	
   	width:23vw;
-  	margin-top: 115vh;
+  	margin-top: 225vh;
 	margin-left: 80vw;
   	transform: rotate(40deg);
+  	cursor:pointer;
 }
 
 #c {
@@ -81,7 +87,7 @@ div.sticky {
   	position: sticky;
   	top: 0;	
   	width:23vw;
-  	margin-top: 55vh;
+  	margin-top: 185vh;
 	margin-left: 20vw;
   	transform: rotate(-5deg);
 
@@ -92,7 +98,7 @@ div.sticky {
   	position: sticky;
   	top: 0;	
   	width:24vw;
-  	margin-top: 105vh;
+  	margin-top: 125vh;
 	margin-left: 44vw;
   	transform: rotate(-40deg);
 
@@ -103,13 +109,49 @@ div.sticky {
   	position: sticky;
   	top: 0;	
   	width: 22vw;
-  	margin-top:155vh;
+  	margin-top:195vh;
   	margin-left: 33vw;
   	transform: rotate(30deg);
 }
 
+#f {
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;	
+  	width: 25vw;
+  	margin-top:20vh;
+  	transform:rotate(15deg);
+}
 
-#popup {
+#g{
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 18px;	
+  	width: 27vw;
+  	margin-top:44vh;
+  	margin-left:60vw;
+  	transform:rotate(-2deg);
+
+}
+
+#h{
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 158px;	
+  	width: 24vw;
+  	margin-top:20vh;
+  	margin-left:18vw;
+  	transform:rotate(-10deg);
+
+}
+
+
+#i{
+
+}
+
+
+.popup {
 	background-color:white;
 	border-style:solid;
 	border-width: 2px;
@@ -117,65 +159,353 @@ div.sticky {
 	width: 35vw;
 	height: 45vh;
 	position:fixed;
-	margin-top:-50vh;
-	margin-left:35vw;
-	z-index: 1;
+	margin-top:117vh;
+	margin-left:24vw;
 	overflow:hidden;
 	display:none;
+	z-index:4;
 
 }
 
-#popuptext {
-	font-family: 'Yatra One', cursive;
-	font-size:55px;
-	line-height:100%;
-	color:green;
-	height: 100vh;
-	padding-left:15px;
-	padding-top: 15px;
-	padding-right:15px;
-	width: 35vw;
-	height: 40vh;
-	overflow:scroll;
-
-}
-
-#x {
-	font-family: 'Yatra One', cursive;
+.popuptext {
+/*	font-family: 'Yatra One', cursive;*/
+	font-family:'IBM Plex Mono';
+	font-weight: 'ExtraLight';
+	font-style:italic;
 	font-size:35px;
 	line-height:100%;
-	color:green;
-	padding-left:5px;
-	padding-top:5px;
+	color:black;
+	height: 300px;
+	padding-left:36px;
+	padding-top: 45px;
+	padding-right:70px;
+	padding-bottom:70px;
+	width: 30vw;
+/*	height: 45vh;*/
+	overflow:scroll;
+	background-color:red;
+
+}
+
+.popuptext div{
+	width:15vw;
+	height:8vh;
+	position:relative;
+	background-color:black;
+	color:red;
+	top:40px;
+	margin-bottom: 50px;
+	text-align:left;
+	font-size:40px;
+	padding-left:40px;
+	padding-top:20px;
+	font-style: 'bold';
+	cursor:pointer;
+}
+
+.popup1b{
+	background-color:white;
+	border-style:solid;
+	border-width: 2px;
+	border-color:black;
+	width: 35vw;
+	height: 45vh;
+	position:fixed;
+	margin-top:130vh;
+	margin-left:30vw;
+	overflow:hidden;
+	display:none;
+	z-index:4;
+
+}
+
+.popup1btext{
+	font-family:'IBM Plex Mono';
+	font-weight: 'ExtraLight';
+	font-style:italic;
+	font-size:35px;
+	line-height:100%;
+	color:black;
+	height: 300px;
+	padding-left:36px;
+	padding-top: 45px;
+	padding-right:70px;
+	padding-bottom:70px;
+	width: 30vw;
+/*	height: 45vh;*/
+	overflow:scroll;
+	background-color: rgb(255, 91, 227);
+}
+
+.popup1btext div{
+
+}
+
+.popup2{
+	background-color:white;
+	border-style:solid;
+	border-width: 2px;
+	border-color:black;
+	width: 35vw;
+	height: 45vh;
+	position:fixed;
+	margin-top:29vh;
+	margin-left:38vw;
+	overflow:hidden;
+	display:none;
+	z-index:8;
+}
+
+.popuptext2 {
+/*	font-family: 'Yatra One', cursive;*/
+	font-family:'IBM Plex Mono';
+	font-weight: 'ExtraLight';
+	font-style:italic;
+	font-size:35px;
+	line-height:110%;
+	color:black;
+	height: 300px;
+	padding-left:36px;
+	padding-top: 45px;
+	padding-right:70px;
+	padding-bottom:70px;
+	width: 30vw;
+/*	height: 45vh;*/
+	overflow:scroll;
+	background-color:white;
+}
+
+.popuptext2 div{
+	width:15vw;
+	height:8vh;
+	position:relative;
+	background-color:rgb(73, 255, 143);
+	top:40px;
+	margin-bottom: 50px;
+	text-align:left;
+	font-size:40px;
+	padding-left:40px;
+	padding-top:20px;
+	font-style: 'bold';
+	cursor:pointer;
+}
+
+.popup3{
+	background-color:transparent;
+	border-style:solid;
+	border-width: 2px;
+	border-color:black;
+	width: 50vw;
+	height: 55vh;
+	position:fixed;
+	margin-top:33vh;
+	margin-left:45vw;
+	overflow:hidden;
+	display:none;
+	z-index:9;
+
+}
+
+.popuptext3 {
+/*	font-family: 'Yatra One', cursive;*/
+	font-family:'IBM Plex Mono';
+	font-style: 'ExtraLight';
+	font-style:italic;
+	font-size:35px;
+	line-height:110%;
+	color:white;
+/*	height: 300px;*/
+	padding-left:36px;
+	padding-top: 45px;
+	padding-right:70px;
+	padding-bottom:70px;
+	top:0;
+	height:353px;
+	width:45vw;
+/*	height: 45vh;*/
+	overflow:scroll;
+/*	background-color:rgb(255, 99, 234);*/
+	background-color:transparent;
+	z-index:10;
+	position:absolute;
+}
+
+.popuptext3 div{
+	width:15vw;
+	height:8vh;
+	position:relative;
+	color:black;
+	background-color:white;
+	top:40px;
+	margin-bottom: 50px;
+	text-align:left;
+	font-size:40px;
+	padding-left:40px;
+	padding-top:20px;
+	font-style: 'bold';
+	cursor:pointer;
+
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+/*#next{
+	position:fixed;
+	width:5vw;
+	height:10vh;
+	background-color:red;
+	right:0;
+	top:45vh;
+}
+
+#prev{
+	position:fixed;
+	width:5vw;
+	height:10vh;
+	background-color:red;
+	left:0;
+	top:45vh;
+}*/
+
+
+
+#x {
+	font-family: 'IBM Plex Mono', cursive;
+	font-size:30px;
+	line-height:100%;
+	color:black;
+	padding-left:8px;
+	padding-top:2px;
 	width: 3vw;
 	height: 5vh;
 	position:;
 	top:0;
 	left:0;
 	background:transparent;
+	position:absolute;
 }
+
+#x2 {
+	font-family: 'Kavivanar', cursive;
+	font-size:80px;
+	line-height:100%;
+	color:black;
+	padding-left:20px;
+	padding-top:15px;
+	width: 3vw;
+	height: 5vh;
+	position:;
+	top:0;
+	left:0;
+	background:transparent;
+	position:absolute;
+	cursor:pointer;
+}
+
+#x2:hover {
+	color:blue;
+}
+
+
+
+#x3{
+	font-family: 'IBM Plex Mono', cursive;
+	font-size:30px;
+	line-height:100%;
+	color:black;
+	padding-left:8px;
+	padding-top:2px;
+	width: 3vw;
+	height: 5vh;
+	position:;
+	top:0;
+	left:0;
+	background:transparent;
+	position:absolute;
+
+}
+
+#x4{
+	font-family: 'IBM Plex Mono', cursive;
+	font-size:30px;
+	line-height:100%;
+	color:white;
+	padding-left:8px;
+	padding-top:2px;
+	width: 3vw;
+	height: 5vh;
+	position:;
+	top:0;
+	left:0;
+	background:transparent;
+	position:absolute;
+	z-index:11;
+
+}
+
+#x5{
+	font-family: 'IBM Plex Mono', cursive;
+	font-size:30px;
+	line-height:100%;
+	color:black;
+	padding-left:8px;
+	padding-top:2px;
+	width: 3vw;
+	height: 5vh;
+	position:;
+	top:0;
+	left:0;
+	background:transparent;
+	position:absolute;
+	z-index:11;
+
+}
+#Vveb{
+	overflow:scroll;
+	width: 50vw;
+}
+
 
 .caption{
 	display: none;
 	visibility: hidden;
+	font-family:'IBM Plex Mono';
+	margin-left: 40vw;
+	background-color:green;
+	height:100vh;
+	width:100vw;
+	z-index:8;
 
 }
 
-.image:hover .caption {
+.images:hover .caption {
 	display: block;
 	visibility: visible;
 }
 
 .images {
-	width:400px;
+	width:30vw;
 	position:absolute;
 	z-index:2;
 	opacity:0.5;
-	display:grid;
+	display:inline;
+	margin-top: 13vh;
+}
+
+.images.div{
+	margin:10px;
 }
 
 .images:hover{
 	opacity:1;
+	z-index:5;
+	cursor:help;
 }
 
 /*.images:hover .letters{
@@ -184,9 +514,101 @@ div.sticky {
 
 #pc1{
 	margin-left: 5vw;
-	margin-top: 5vh;
+/*	margin-top: 5vh;*/
 }
 #RCA{
-	margin-left: 65vw;
-	margin-top: 55vh;
+	margin-left: 27vw;
+	margin-top: 3vh;
+	width:40vw;
 }
+
+#Behrens{
+	margin-left:60vw;
+	width:40vw;
+}
+
+#toaster{
+	margin-left:20vw;
+	width:30vw;
+}
+
+#Uthal{
+	margin-left:38vw;
+}
+
+#UT{
+	margin-left:71vw;
+	height:73vh;
+	width:auto;
+}
+
+#viewimages{
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 65vh;	
+	width: 32vw;
+	height: 20vh;
+	margin-left:33vw;
+	margin-top:45vh;
+	background-color:black;
+	color:white;
+/*	z-index:2;*/
+	font-family: 'Kavivanar', cursive;
+	font-size:80px;
+	text-align:center;
+	padding-top:40px;
+	cursor:pointer;
+	letter-spacing:2px;
+
+}
+
+#viewimages:hover{
+	background-color:white;
+	color:black;
+	border:solid;
+	border-color:black;
+	border-width:2px;
+}
+
+/*flexbox*/
+
+#galleryBG{
+	top:0;
+	left:0;
+	background-color:white;
+	width:1000vw;
+	height:1000vh;
+	position:fixed;
+	z-index:3;
+	display:none;
+	overflow:scroll;
+}
+
+#arrow{
+	position:fixed;
+	width:4vw;
+	right:2vw;
+	top:75vh;
+}
+/*
+#arrow:hover{
+	transform:rotate(180deg);
+	transition:all 300ms ease;*/
+}
+
+.flip{
+	transform: rotate(180deg);
+	transition:all 300ms ease;
+}
+
+#next{
+	width:10vw;
+	height:6vh;
+	right:0;
+	bottom:0;
+	background-color:blue;
+	text-align:center;
+	position:fixed;
+}
+
+
